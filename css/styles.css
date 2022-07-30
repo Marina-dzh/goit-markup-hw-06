@@ -860,6 +860,7 @@ fill: var(--acc);
     bottom: 14px;
     left: 0;
     transform: translateX(100%);
+    
     transition-property: fill;
     transition-duration: var(--duration);
     transition-timing-function: var(--func);
@@ -874,15 +875,40 @@ fill: var(--acc);
     margin-bottom: 30px;
 }
 
-.policy-checkbox:checked + .icon-check{
-    background-color: #2196F3;
-    border: transparent;
-}
 .icon-check{
-    opacity: 1;
-    border: 2px solid #000000;
+    background-color: transparent;
     border-radius: 2px;
-    transition-property: background-color, border ;
+
+    transition-property: background-color ;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--func);
+    
+}
+.policy-checkbox:checked + .icon-check{
+    background-color: var(--acc);
+
+}
+.register-icon-check {
+    opacity: 0;
+    fill: var(--bcg);
+
+    transition-property: opacity ;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--func);
+
+}
+
+.policy-checkbox:checked + .icon-check .register-icon-uncheck {
+    opacity: 0;
+    transition-property: opacity ;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--func);
+}
+
+
+.policy-checkbox:checked + .icon-check .register-icon-check {
+    opacity: 1;
+    transition-property: opacity ;
     transition-duration: var(--duration);
     transition-timing-function: var(--func);
 }
