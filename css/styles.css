@@ -448,7 +448,12 @@ background-color: rgba(47, 48, 58, 0.8);
     margin-right: 0;
     margin-bottom: 20px;
 }
-.address{font-style: normal;}
+.address{font-style: normal;
+    
+}
+.connect-adress{
+width: 231px;
+}
 
 .contact-footer {
     margin-top: 9px;
@@ -471,9 +476,10 @@ background-color: rgba(47, 48, 58, 0.8);
 .connect{
     display:flex;
     align-items: baseline;
-    gap: 70px;
 }
-
+.connect-socialc{
+    margin-left: 70px;
+}
 .social-footer {
     display: flex;
     justify-content: center;
@@ -523,6 +529,7 @@ background-color: rgba(47, 48, 58, 0.8);
 }
 .subscribe{
     display: block;
+    margin-left: 93px;
 
 }
 .footer-input-email{
@@ -734,6 +741,14 @@ background-color: rgba(47, 48, 58, 0.8);
     cursor: pointer;
 }
 
+.btn-close-modal:hover, .btn-close-modal:focus{
+    fill: var(--acc);
+    
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--func);
+}
+
 .modal-form{
     text-align: center;
 }
@@ -745,7 +760,7 @@ background-color: rgba(47, 48, 58, 0.8);
 
 .btn-submit {
     text-align: center;
-    padding: 10px 32px;
+    padding: 10px 52px;
 
     color: var(--bcg);
     background-color: var(--acc);
