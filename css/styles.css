@@ -899,7 +899,7 @@ fill: var(--acc);
 }
 
 .policy-checkbox:checked + .icon-check .register-icon-uncheck {
-    opacity: 1;
+    opacity: 0;
     transition-property: opacity ;
     transition-duration: var(--duration);
     transition-timing-function: var(--func);
